@@ -1,14 +1,17 @@
 import React from 'react'
-import DuckImage from '../assets/Duck.jpg'
+import MainCarousel from 'components/MainCarousel'
+import ProjectDescription from 'components/ProjectDescription'
+import ProjectHighlights from 'components/ProjectHighlights'
+import BookingInformation from 'components/BookingInformation'
+
 import './HomeView.scss'
 
 export const HomeView = () => (
-  <div>
-    <h4>Welcome!</h4>
-    <img
-      alt='This is a duck, because Redux!'
-      className='duck'
-      src={DuckImage} />
+  <div className='container'>
+    <MainCarousel />
+    <ProjectDescription />
+    <ProjectHighlights />
+    <BookingInformation />
   </div>
 )
 
